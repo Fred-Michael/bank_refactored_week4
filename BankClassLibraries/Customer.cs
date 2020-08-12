@@ -10,8 +10,6 @@ namespace BankClassLibraries
         public string customerName { get; set; }
         public string customerID { get; set; }
         public string customerEmail { get; set; }
-
-        //work still needs to be done on this customersAccounts ppty
         public List<Accounts> customersAccounts
         {
             get

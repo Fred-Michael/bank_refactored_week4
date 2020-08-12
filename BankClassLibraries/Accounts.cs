@@ -78,7 +78,7 @@ namespace BankClassLibraries
                 throw new InvalidOperationException("Deposit must be from #100 upwards");
             }
 
-            //add a new deposit to the account in the Bank store
+            //add a deposit to the account in the Bank store
             var deposit = new Transactions(amountToDeposit, accNum, description, typeOfAccount.ToString(), DateTime.Now);
             BankData.Transactions.Add(deposit);
         }
@@ -111,7 +111,6 @@ namespace BankClassLibraries
                     account.MakeDeposit(receiverAccNum, amountToTransfer, description, typeOfAccount);
                     break;
                 }
-                //throw new InvalidOperationException("Invalid Operation: Account was not found");
             }
         }
     }
